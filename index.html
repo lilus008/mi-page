@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imprenta Quehace - Papelería y Etiquetas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+        nav {
+            text-align: center;
+            margin: 10px 0;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 1.1em;
+        }
+        section {
+            padding: 20px;
+            margin: 10px auto;
+            max-width: 900px;
+        }
+        h2 {
+            color: #007bff;
+        }
+        .service-item {
+            margin-bottom: 20px;
+        }
+        .contact-form {
+            display: flex;
+            flex-direction: column;
+        }
+        .contact-form label {
+            margin-top: 10px;
+        }
+        .contact-form input, .contact-form textarea {
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        .contact-form button {
+            margin-top: 10px;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #007bff;
+            color: #fff;
+            font-size: 1em;
+            cursor: pointer;
+        }
+        .contact-form button:hover {
+            background-color: #0056b3;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Imprenta Quehace</h1>
+        <nav>
+            <a href="#services">Servicios</a>
+            <a href="#contact">Contacto</a>
+            <a href="#quote">Solicitud de Presupuesto</a>
+        </nav>
+    </header>
+
+    <section id="services">
+        <h2>Servicios</h2>
+        <div class="service-item">
+            <h3>Papelería y Formatos</h3>
+            <p>Ofrecemos una amplia gama de papelería, incluyendo hojas membretadas, formularios, y más.</p>
+        </div>
+        <div class="service-item">
+            <h3>Etiquetas</h3>
+            <p>Diseñamos y imprimimos etiquetas personalizadas para cualquier necesidad.</p>
+        </div>
+        <div class="service-item">
+            <h3>Tarjetas</h3>
+            <p>Desde tarjetas de presentación hasta tarjetas de felicitación, tenemos lo que necesitas.</p>
+        </div>
+        <div class="service-item">
+            <h3>Cajas y Empaques</h3>
+            <p>Soluciones completas para empaques, desde cajas de cartón hasta envases personalizados.</p>
+        </div>
+        <div class="service-item">
+            <h3>Libros</h3>
+            <p>Impresión de libros y publicaciones con alta calidad y acabados profesionales.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Información de Contacto</h2>
+        <p>Teléfono: (123) 456-7890</p>
+        <p>Email: info@imprentaquehace.com</p>
+        <p>Dirección: Calle Ejemplo 123, Ciudad, País</p>
+    </section>
+
+    <section id="quote">
+        <h2>Solicitud de Presupuesto</h2>
+        <form class="contact-form" action="submit_form.php" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="phone">Teléfono:</label>
+            <input type="tel" id="phone" name="phone">
+            
+            <label for="details">Detalles del Proyecto:</label>
+            <textarea id="details" name="details" rows="5" required></textarea>
+            
+            <button type="submit">Enviar Solicitud</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Imprenta Quehace. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
